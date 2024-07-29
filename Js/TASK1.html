@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="k" onclick="welcome()">JavaScript is the world's most
+        popular programming language.</p>
+    <button onclick="large()">large</button>
+    <button onclick="small()">small</button>
+    <button onclick="color()">color</button>
+    <button onclick="opacity()">opacity</button>
+    <button onclick="Hidden()">Hidden</button>
+    <button onclick="reset()">reset</button>
+    <div >
+        <img id="img" onclick="welcome()"src="images.jpg">
+    </div>
+    <button onclick="border()">border</button>
+    <button onclick="raduis()">raduis</button>
+    <button onclick="Hidden1()">Hidden</button>
+    <button onclick="Show()">Show</button>
+    <button onclick="opacity1()">opacity</button>
+</body>
+<script>
+    function welcome() {
+    }
+    function large() {
+        document.getElementById("k").style.fontSize = "80px"
+    }
+    function small() {
+        document.getElementById("k").style.fontSize = "70px"
+    }
+    function color() {
+        document.getElementById("k").style.color = "red"
+    }
+    function opacity() {
+        document.getElementById("k").style.opacity = "0.5"
+    }
+    function Hidden() {
+        document.getElementById("k").style.display = "none"
+    }
+    function reset() {
+        document.getElementById("k").style = "reset"
+    } 
+    function border() {
+        document.getElementById("img").style.border = "2px solid red"
+    }
+    function raduis() {
+        document.getElementById("img").style.borderRadius = "20px"
+    }
+    function Hidden1() {
+        document.getElementById("img").style.display = "none"
+    }
+    function Show() {
+        document.getElementById("img").style.display = "block"
+    }
+    function opacity1() {
+        document.getElementById("img").style.opacity = "0.5"
+    }
+</script>
+</body>
+</html>

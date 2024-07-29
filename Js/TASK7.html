@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<p>Enter Url:</p>
+     <input type="url" id="url" placeholder="Enter Url">
+    <button type="button" onclick="window.location.replace(document.getElementById('url').value)">Go To Page</button>
+    <button type="button" onclick="window.open(document.getElementById('url').value)">open in new tab</button>
+    <button type="button" onclick="window.history.back()">Back</button>
+    <button type="button" onclick="window.history.forward()">Forward</button>
+    <button type="button" onclick="window.location.reload()">Reload</button>
+    <button type="button" onclick="window.print()">Print</button>
+
+<h3>Change BackgroundColor</h3>
+<input type="color" onchange="document.body.style.backgroundColor=this.value">
+<h3>Change Text Color</h3>
+<input type="color" onchange="document.body.style.color=this.value">
+
+</body>
+</html>

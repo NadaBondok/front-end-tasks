@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="member">
+    <button onclick="add('member','memberstable')">Add Member</button>
+    <p>Members</p>
+    <table>
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+        </tr>
+        </thead>
+        <tbody id="memberstable">
+        </tbody>
+    </table>
+    <script>
+var members = [];
+function add(a,b) {
+    members.push(document.getElementById(a).value);
+    document.getElementById(b).innerHTML = '';
+    for (let i = 0; i < members.length; i++) {
+        document.getElementById(b).innerHTML += 
+            '<tr><td>' + (i + 1) + '</td>' +
+            '<td>' + members[i] + '</td></tr>';
+    }
+}
+    </script>
+</body>
+</html>

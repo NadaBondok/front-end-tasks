@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js</title>
+</head>
+<body>
+    <input type="text" id="txt" placeholder="Enter text">
+    <input type="number" id="num" placeholder="Enter Number">
+    <button type="button" onclick="print1()">print</button>
+    <p id="p"> </p>
+    <script>
+        function print1(){
+            var x = document.getElementById('num').value;
+            if (x > 0) {
+                document.getElementById('p').innerHTML = (document.getElementById('txt').value).repeat(document.getElementById('num').value);
+            }
+            else {
+                alert('Please Enter positive number')
+            }
+        }
+    </script>
+</body>
+</html>
